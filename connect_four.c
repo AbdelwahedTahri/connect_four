@@ -360,7 +360,7 @@ unsigned get_max_successive(char token, struct position pos)
 
 _Bool f_winner(unsigned player_index)
 {
-    if(get_max_successive(game.player[player_index].token, game.player[player_index].last_played_position) == 4)
+    if(get_max_successive(game.player[player_index].token, game.player[player_index].last_played_position) >= 4)
         return 1;
     
     return 0; 
